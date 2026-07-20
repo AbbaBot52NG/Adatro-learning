@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADATRO Computer Basics — Learn Today. Practice Daily. Grow Forever.</title>
+<meta name="description" content="ADATRO Computer Basics teaches beginner-friendly, practical computer skills — hardware, Windows, typing, Word, Excel, PowerPoint, Google Drive, internet safety and more.">
+
+<!-- Google Fonts: Sora for display, Inter for body -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="container navbar__inner">
+    <a href="#home" class="logo" aria-label="ADATRO home">
+      <span class="logo__mark">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="1" width="32" height="32" rx="9" stroke="url(#logoGrad)" stroke-width="2"/>
+          <path d="M9 22.5V11.5L17 22.5L25 11.5" stroke="url(#logoGrad)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="logoGrad" x1="1" y1="1" x2="33" y2="33" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#A3E635"/>
+              <stop offset="1" stop-color="#2563EB"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
+      <span class="logo__text">ADATRO</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#curriculum" class="nav-link">Curriculum</a>
+      <a href="#benefits" class="nav-link">Benefits</a>
+      <a href="#instructor" class="nav-link">Instructor</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <a href="#join" class="btn btn--primary btn--sm">Join Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu overlay -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" class="mobile-link">Home</a>
+  <a href="#about" class="mobile-link">About</a>
+  <a href="#curriculum" class="mobile-link">Curriculum</a>
+  <a href="#benefits" class="mobile-link">Benefits</a>
+  <a href="#instructor" class="mobile-link">Instructor</a>
+  <a href="#faq" class="mobile-link">FAQ</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+  <a href="#join" class="btn btn--primary mobile-join">Join Now</a>
+</div>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <div class="hero__copy reveal">
+      <span class="eyebrow">ADATRO Computer Basics</span>
+      <h1 class="hero__title">Computer Basics <span class="text-gradient">for Beginners</span></h1>
+      <p class="hero__subtitle">Master the essential computer skills you need for work, school, and everyday life.</p>
+      <div class="hero__actions">
+        <a href="#join" class="btn btn--outline">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.35 2 11.72c0 2 .59 3.87 1.6 5.45L2 22l4.97-1.55A10.4 10.4 0 0 0 12 21.44c5.52 0 10-4.35 10-9.72S17.52 2 12 2Z" stroke="currentColor" stroke-width="1.6"/></svg>
+          Join WhatsApp
+        </a>
+        <a href="#curriculum" class="btn btn--primary">
+          Start Learning
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <div class="hero__stats">
+        <div><strong>14</strong><span>Modules</span></div>
+        <div><strong>1,200+</strong><span>Students</span></div>
+        <div><strong>4.9★</strong><span>Rating</span></div>
+      </div>
+    </div>
+
+    <div class="hero__art reveal" aria-hidden="true">
+      <svg viewBox="0 0 480 400" class="hero-illustration" xmlns="http://www.w3.org/2000/svg">
+        <!-- monitor -->
+        <rect x="60" y="40" width="360" height="240" rx="16" fill="#131A3A" stroke="#2563EB" stroke-width="2"/>
+        <rect x="80" y="60" width="320" height="180" rx="8" fill="#0B1026"/>
+        <!-- screen lines -->
+        <rect x="100" y="80" width="120" height="10" rx="5" fill="#2563EB"/>
+        <rect x="100" y="102" width="200" height="8" rx="4" fill="#3B4468"/>
+        <rect x="100" y="120" width="170" height="8" rx="4" fill="#3B4468"/>
+        <rect x="100" y="138" width="220" height="8" rx="4" fill="#3B4468"/>
+        <rect x="100" y="166" width="90" height="34" rx="8" fill="#A3E635" class="pulse-key"/>
+        <rect x="200" y="166" width="90" height="34" rx="8" fill="#2563EB" opacity="0.85"/>
+        <circle cx="360" cy="183" r="24" fill="none" stroke="#A3E635" stroke-width="2.4" class="spin-slow"/>
+        <path d="M360 171v12l8 8" stroke="#A3E635" stroke-width="2.4" stroke-linecap="round"/>
+        <!-- stand -->
+        <rect x="220" y="280" width="40" height="26" fill="#131A3A"/>
+        <rect x="170" y="306" width="140" height="14" rx="7" fill="#131A3A"/>
+        <!-- keyboard -->
+        <rect x="120" y="330" width="240" height="46" rx="10" fill="#131A3A" stroke="#2563EB" stroke-width="1.5"/>
+        <g fill="#3B4468">
+          <rect x="134" y="342" width="18" height="10" rx="2"/>
+          <rect x="158" y="342" width="18" height="10" rx="2"/>
+          <rect x="182" y="342" width="18" height="10" rx="2"/>
+          <rect x="206" y="342" width="18" height="10" rx="2"/>
+          <rect x="230" y="342" width="18" height="10" rx="2"/>
+          <rect x="254" y="342" width="18" height="10" rx="2"/>
+          <rect x="278" y="342" width="18" height="10" rx="2"/>
+          <rect x="302" y="342" width="18" height="10" rx="2"/>
+          <rect x="326" y="342" width="18" height="10" rx="2"/>
+          <rect x="180" y="358" width="100" height="10" rx="4" fill="#2563EB" opacity="0.6"/>
+        </g>
+        <!-- floating cursor + badge -->
+        <circle cx="405" cy="95" r="30" fill="#A3E635" opacity="0.12"/>
+        <path d="M398 82l7 26 4-10 10-4-21-12Z" fill="#A3E635"/>
+        <circle cx="70" cy="300" r="22" fill="#2563EB" opacity="0.12"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">About the course</span>
+      <h2>Everything you need to feel at home on a computer</h2>
+      <p class="section-lead">ADATRO Computer Basics is a complete, beginner-friendly course built for anyone who has ever felt lost in front of a screen. From your very first click to writing documents, managing spreadsheets, and staying safe online — we walk with you, step by step.</p>
+    </div>
+
+    <div class="topic-grid reveal">
+      <div class="topic-chip"><span>Computer Fundamentals</span></div>
+      <div class="topic-chip"><span>Operating System</span></div>
+      <div class="topic-chip"><span>Keyboard</span></div>
+      <div class="topic-chip"><span>Mouse</span></div>
+      <div class="topic-chip"><span>Typing Skills</span></div>
+      <div class="topic-chip"><span>Files &amp; Folders</span></div>
+      <div class="topic-chip"><span>Internet Basics</span></div>
+      <div class="topic-chip"><span>Email</span></div>
+      <div class="topic-chip"><span>Microsoft Word</span></div>
+      <div class="topic-chip"><span>Microsoft Excel</span></div>
+      <div class="topic-chip"><span>Microsoft PowerPoint</span></div>
+      <div class="topic-chip"><span>Google Drive</span></div>
+      <div class="topic-chip"><span>Online Safety</span></div>
+      <div class="topic-chip"><span>Basic Troubleshooting</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CURRICULUM ============ -->
+<section class="curriculum" id="curriculum">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Course curriculum</span>
+      <h2>14 modules, one confident finish</h2>
+      <p class="section-lead">Every module builds on the last, taking you from your first power-up to a real final project.</p>
+    </div>
+
+    <div class="module-grid" id="moduleGrid">
+      <!-- Module cards injected by JS from data, see script.js -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ BENEFITS ============ -->
+<section class="benefits" id="benefits">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Course benefits</span>
+      <h2>Built for real, lasting progress</h2>
+    </div>
+
+    <div class="benefit-grid reveal">
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3l1.6 4.6L18 9l-4.4 1.4L12 15l-1.6-4.6L6 9l4.4-1.4L12 3Z" stroke="#A3E635" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Beginner Friendly</h3>
+        <p>No jargon, no assumptions — every lesson starts from zero.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 12h16M12 4v16" stroke="#A3E635" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Practical Lessons</h3>
+        <p>Learn by doing, with real tasks you'll actually use again.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="3" stroke="#A3E635" stroke-width="1.6"/><path d="M8 12l3 3 5-6" stroke="#A3E635" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Real Projects</h3>
+        <p>Finish with a portfolio-ready final project you built yourself.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="9" r="5" stroke="#A3E635" stroke-width="1.6"/><path d="M8 13.5L6 21l6-3 6 3-2-7.5" stroke="#A3E635" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Certificate</h3>
+        <p>Earn a certificate of completion to show what you've learned.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="8" cy="9" r="3" stroke="#A3E635" stroke-width="1.6"/><circle cx="17" cy="10" r="2.4" stroke="#A3E635" stroke-width="1.6"/><path d="M3 20c0-3 2.5-5 5-5s5 2 5 5" stroke="#A3E635" stroke-width="1.6" stroke-linecap="round"/><path d="M14.5 15.2c2.2.3 4 2 4.5 4.8" stroke="#A3E635" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Community Support</h3>
+        <p>Ask questions and grow alongside a friendly student community.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="#A3E635" stroke-width="1.6"/><path d="M12 7v5l3.5 2" stroke="#A3E635" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Lifetime Access</h3>
+        <p>Revisit any lesson whenever you need a refresher — forever.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY ADATRO / INSTRUCTOR ============ -->
+<section class="why" id="instructor">
+  <div class="container why__inner">
+    <div class="why__copy reveal">
+      <span class="eyebrow">Why learn with ADATRO</span>
+      <h2>Taught by people who remember being a beginner</h2>
+      <p class="section-lead">Our instructors specialize in plain-language teaching — no talking down, no rushing through. Just clear steps, at a pace that respects your time.</p>
+
+      <ul class="why-list">
+        <li>
+          <span class="why-check">✓</span>
+          <div><strong>Professional Teachers</strong><p>Experienced instructors dedicated to beginner education.</p></div>
+        </li>
+        <li>
+          <span class="why-check">✓</span>
+          <div><strong>Simple Lessons</strong><p>Complex ideas broken into small, digestible steps.</p></div>
+        </li>
+        <li>
+          <span class="why-check">✓</span>
+          <div><strong>Affordable</strong><p>Premium quality education without the premium price tag.</p></div>
+        </li>
+        <li>
+          <span class="why-check">✓</span>
+          <div><strong>Hands-on Practice</strong><p>Every concept is reinforced with real exercises.</p></div>
+        </li>
+        <li>
+          <span class="why-check">✓</span>
+          <div><strong>Career Growth</strong><p>Skills that open doors at work, school, and beyond.</p></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="why__panel reveal" aria-hidden="true">
+      <div class="instructor-card">
+        <div class="instructor-avatar">AT</div>
+        <h3>ADATRO Instructor Team</h3>
+        <p>Certified computer educators, 8+ years teaching beginners.</p>
+        <div class="instructor-rating">★★★★★ <span>4.9/5 average rating</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Student stories</span>
+      <h2>What our students say</h2>
+    </div>
+
+    <div class="testimonial-grid reveal">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"I couldn't even open an email before this course. Now I use Word and Excel confidently at my new job."</p>
+        <div class="testimonial-person">
+          <div class="avatar">SN</div>
+          <div><strong>Sarah N.</strong><span>Office Assistant</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"The lessons are so simple to follow. I finally understand files, folders, and how my computer actually works."</p>
+        <div class="testimonial-person">
+          <div class="avatar">JM</div>
+          <div><strong>James M.</strong><span>University Student</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>"Affordable, practical, and encouraging. I built my first PowerPoint presentation in week three!"</p>
+        <div class="testimonial-person">
+          <div class="avatar">RK</div>
+          <div><strong>Ruth K.</strong><span>Small Business Owner</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Questions</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+
+    <div class="accordion reveal" id="accordion">
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Do I need any prior computer experience?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>Not at all. ADATRO Computer Basics is designed for absolute beginners — we start from turning the computer on.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>How long does the course take to complete?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>Most students complete all 14 modules in 6-8 weeks, studying just a few hours per week at their own pace.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Will I receive a certificate?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>Yes. On completing the final project, you'll receive an ADATRO Certificate of Completion you can share or add to your resume.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Can I access the course on my phone?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>Yes, the course and community are fully accessible on mobile, tablet, and desktop devices.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Is there support if I get stuck?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>Absolutely — our WhatsApp and Telegram communities are active daily, and instructors respond to questions regularly.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Do I get lifetime access after enrolling?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-panel">
+          <p>Yes. Once enrolled, you keep full access to all lessons and future updates for life.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOIN COMMUNITY ============ -->
+<section class="join" id="join">
+  <div class="join__glow" aria-hidden="true"></div>
+  <div class="container join__inner reveal">
+    <span class="eyebrow eyebrow--light">Join the community</span>
+    <h2>Learn Today. Practice Daily. Grow Forever.</h2>
+    <p>Connect with thousands of learners across every ADATRO community and never miss a lesson, tip, or update.</p>
+    <div class="join__buttons">
+      <a href="#" class="btn btn--community btn--whatsapp">Join WhatsApp Community</a>
+      <a href="#" class="btn btn--community btn--telegram">Join Telegram Channel</a>
+      <a href="#" class="btn btn--community btn--facebook">Follow Facebook Page</a>
+      <a href="#" class="btn btn--community btn--youtube">Subscribe YouTube</a>
+      <a href="#" class="btn btn--community btn--linkedin">Follow LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Get in touch</span>
+      <h2>We'd love to hear from you</h2>
+      <p class="section-lead">Questions about enrollment, the curriculum, or anything else? Reach us on any channel below.</p>
+    </div>
+
+    <div class="contact-grid reveal">
+      <a href="mailto:hello@adatro.com" class="contact-card">
+        <span class="contact-icon">✉</span>
+        <strong>Email</strong>
+        <span>hello@adatro.com</span>
+      </a>
+      <a href="#" class="contact-card">
+        <span class="contact-icon">💬</span>
+        <strong>WhatsApp</strong>
+        <span>Chat with us</span>
+      </a>
+      <a href="#" class="contact-card">
+        <span class="contact-icon">✈</span>
+        <strong>Telegram</strong>
+        <span>Join the channel</span>
+      </a>
+      <a href="#" class="contact-card">
+        <span class="contact-icon">f</span>
+        <strong>Facebook</strong>
+        <span>@adatro</span>
+      </a>
+      <a href="#" class="contact-card">
+        <span class="contact-icon">in</span>
+        <strong>LinkedIn</strong>
+  
